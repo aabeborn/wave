@@ -25,5 +25,8 @@
 		"ecmaVersion": "esnext",
 		"sourceType": "module",
 		"project": "./tsconfig.json"
+	},
+	"rules": {
+		"unicorn/filename-case": 0
 	}
 }
