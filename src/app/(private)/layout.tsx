@@ -1,4 +1,4 @@
-import Sidebar from '@/components/sidebar/sidebar';
+import Appbar from '@/components/appbar/appbar';
 import { auth } from '@/lib/auth';
 import { redirect } from 'next/navigation';
 import { ReactNode } from 'react';
@@ -10,9 +10,10 @@ const Layout = async ({ children }: { children: ReactNode }) => {
 	console.log('session', session);
 
 	return (
-		<div className="w-full h-full inline-flex">
-			<Sidebar />
-			{children}
+		<div className="relative w-full h-full verflow-hidden">
+			<div className="relative flex flex-col overflow-hidden flex-1">
+				<Appbar /> {children}
+			</div>
 		</div>
 	);
 };

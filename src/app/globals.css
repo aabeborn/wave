@@ -13,6 +13,8 @@
 
 	--color-accent: #ff009d;
 	--color-on-accent: #fceee7;
+
+	--color-current: current;
 }
 
 html,

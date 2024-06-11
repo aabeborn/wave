@@ -11,7 +11,8 @@ const accent = Anton({
 
 export const metadata: Metadata = {
 	title: 'Wave',
-	description: 'Waze - Music App'
+	description: 'Waze - Music App',
+	viewport: 'width=device-width, initial-scale=1.0'
 };
 
 export default function RootLayout({
