@@ -13,16 +13,16 @@ const ListItem = ({ href, icon, text }: ListItemProperties) => {
 		<Link
 			href={href}
 			className={cn(
-				'flex w-fit gap-2 items-center',
-				isActive && 'text-secondary'
+				'flex w-fit gap-2 items-center px-2 py-1 hover:font-bold',
+				isActive && 'text-primary px-2 py-1 font-bold'
 			)}
 		>
 			<Icon
 				{...icon.props}
-				strokeWidth={isActive ? 2 : 1.5}
-				className="size-6"
+				strokeWidth={isActive ? 2.5 : 1.5}
+				className="size-5"
 			/>
-			<span className="text-lg">{text}</span>
+			<span className="text-md">{text}</span>
 		</Link>
 	);
 };

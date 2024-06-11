@@ -34,7 +34,7 @@ const SignIn = async () => {
 				>
 					<button
 						type="submit"
-						className="font-accent text-bg bg-secondary py-3 px-6 text-2xl"
+						className="font-accent text-on-primary bg-primary py-3 px-6 text-2xl"
 					>
 						Signin with Spotify
 					</button>

@@ -47,7 +47,7 @@ const discover: ListItem[] = [
 
 const Sidebar = () => {
 	return (
-		<aside className="h-full text-main p-8 flex flex-col gap-10">
+		<aside className="h-full text-on-surface p-8 flex flex-col gap-10 bg-surface-bright">
 			<Image src="/logo.svg" alt="Wave loge" width={66} height={32} />
 			<List items={main} />
 			<List items={discover} title="Discover" />

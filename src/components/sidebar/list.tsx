@@ -15,7 +15,7 @@ interface ListProperties {
 const List = ({ items, title }: ListProperties) => {
 	return (
 		<div className="flex flex-col gap-2">
-			<span className="text-2xl font-accent mb-2">{title}</span>
+			<span className="text-xl font-accent mb-2">{title}</span>
 			{items.map(item => (
 				<Item key={item.href} {...item} />
 			))}

@@ -29,7 +29,7 @@ export default function RootLayout({
 					sizes="<generated>"
 				/>
 			</head>
-			<body className={`${main.variable} ${accent.variable} bg-bg`}>
+			<body className={`${main.variable} ${accent.variable} bg-surface`}>
 				{children}
 			</body>
 		</html>
