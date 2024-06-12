@@ -7,16 +7,16 @@ const SignIn = async () => {
 	const session = await auth();
 	if (session) redirect('/');
 	return (
-		<main className="relative w-full h-full inline-flex justify-between">
-			<div className="flex flex-col justify-center h-full p-4 pl-12 gap-8 w-fit">
+		<main className="relative inline-flex h-full w-full justify-between">
+			<div className="flex h-full w-fit flex-col justify-center gap-8 p-4 pl-12">
 				<Image
-					className="absolute left-12 top-8"
+					className="absolute top-8 left-12"
 					src="/logo.svg"
 					alt="Wave Logo"
 					width={100}
 					height={48}
 				/>
-				<span className="text-8xl text-main font-accent">
+				<span className="text-on-surface font-accent text-8xl">
 					TUNE IN
 					<br />
 					<span className="text-accent">DISCOVER</span>
@@ -27,7 +27,7 @@ const SignIn = async () => {
 					action={async () => {
 						'use server';
 						await signIn('spotify', {
-							callbackUrl: `${window.location.origin}/`
+							callbackUrl: `/`
 						});
 					}}
 					className="self-end"
@@ -40,13 +40,11 @@ const SignIn = async () => {
 					</button>
 				</form>
 			</div>
-			<div className="relative h-full w-1/2 shrink-1 after:block after:top-0 after:left-0 after:w-full after:h-full after:shadow-login">
+			<div className="after:shadow-login relative h-full w-1/2 shrink-1 after:top-0 after:left-0 after:block after:h-full after:w-full">
 				<Image
 					src="/images/login-bg2.jpg"
-					alt="Background"
-					layout="fill"
-					objectFit="cover"
-					objectPosition="start"
+					alt="Background object-cover"
+					fill={true}
 				/>
 			</div>
 		</main>

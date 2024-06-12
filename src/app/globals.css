@@ -6,7 +6,17 @@
 
 	--color-surface: #051230;
 	--color-on-surface: #fceee7;
+	--color-on-surface-darker: color-mix(
+		in srgb,
+		var(--color-on-surface) 10%,
+		var(--color-surface)
+	);
 	--color-surface-bright: color-mix(in srgb, white 5%, var(--color-surface));
+	--color-surface-brighter: color-mix(
+		in srgb,
+		white 15%,
+		var(--color-surface)
+	);
 
 	--color-primary: #f5be41;
 	--color-on-primary: #051230;

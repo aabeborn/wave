@@ -2,6 +2,9 @@
 const nextConfig = {
 	experimental: {
 		reactCompiler: true
+	},
+	images: {
+		domains: ['i.scdn.co', 'localhost']
 	}
 };
 

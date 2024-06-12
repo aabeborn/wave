@@ -22,7 +22,7 @@ const items: AppBarNavigationItem[] = [
 
 const Navigation = () => {
 	return (
-		<nav className="inline-flex gap-4 items-center px-8 py-2">
+		<nav className="items-centerpy-2 inline-flex gap-4">
 			{items.map(item => (
 				<NavigationItem key={item.href} {...item} />
 			))}
