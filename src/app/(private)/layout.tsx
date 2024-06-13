@@ -4,15 +4,19 @@ import Appbar from '@/components/appbar/appbar';
 import QueryProvider from '@/components/provider/queryProvider';
 import { auth } from '@/lib/auth';
 
-const Layout = async ({ children }: { children: ReactNode }) => {
+type Properties = {
+	children: ReactNode;
+};
+
+const Layout = async ({ children }: Properties) => {
 	const session = await auth();
 	if (!session) redirect('/auth/signin');
-
 	return (
 		<QueryProvider>
-			<div className="relative w-full h-full verflow-hidden">
-				<div className="relative flex flex-col overflow-hidden flex-1">
-					<Appbar /> {children}
+			<div className="relative h-full w-full overflow-hidden">
+				<div className="relative flex flex-1 flex-col overflow-hidden">
+					<Appbar />
+					{children}
 				</div>
 			</div>
 		</QueryProvider>

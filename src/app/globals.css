@@ -11,10 +11,10 @@
 		var(--color-on-surface) 10%,
 		var(--color-surface)
 	);
-	--color-surface-bright: color-mix(in srgb, white 5%, var(--color-surface));
+	--color-surface-bright: color-mix(in srgb, white 10%, var(--color-surface));
 	--color-surface-brighter: color-mix(
 		in srgb,
-		white 15%,
+		white 20%,
 		var(--color-surface)
 	);
 

@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Navigation from './navigation/navigation';
 import User from './user/user';
+import Search from './search/search';
+
 const Appbar = () => {
 	return (
 		<>
@@ -9,7 +11,9 @@ const Appbar = () => {
 			</div>
 			<header className="w-max-full text-on-surface grid-gap-4 grid w-full grid-cols-3 items-center overflow-auto px-8">
 				<Navigation />
-				<div> search </div>
+				<div className="inline-flex w-full justify-center place-self-center">
+					<Search />
+				</div>
 				<div className="place-self-end">
 					<User />
 				</div>

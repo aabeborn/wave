@@ -48,6 +48,7 @@ const AccountDropdown = ({ image, name }: Properties) => {
 			</Dropdown.Trigger>
 			<Dropdown.Portal>
 				<Dropdown.Content
+					align="end"
 					sideOffset={6}
 					className="bg-surface-brighter text-on-surface flex min-w-40 flex-col gap-2 rounded p-2"
 				>
